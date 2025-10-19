@@ -48,20 +48,56 @@ a {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
+    outline: none;
     border-radius: 8px;
     background: var(--primary-color);
 }
 
 .btn:hover {
-    opacity: 0.9;
+    /* opacity: 0.9; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
 }
 
+.section-eyebrow {
+    display: flex;
+    align-items: center;
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.section-eyebrow::before {
+    margin-right: 12px;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section-heading {
+    margin-top: 12px;
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
 /* Header */
 .header {
+    z-index: 99;
     position: sticky;
     top: -36px;
     padding: 42px 0 8px;
+    background: #fff;
 }
 
 .header__inner {
@@ -110,4 +146,413 @@ a {
     display: flex;
     align-items: center;
     column-gap: 28px;
+}
+
+.header-action__link {
+    color: #212832;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.header-action__btn {
+    --height: 52px;
+
+    background: #212832;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 60px;
+}
+
+.hero__content {
+    width: 540px;
+}
+
+.hero__heading {
+    font-size: 6rem;
+}
+
+.hero__heading-hightlight {
+    color: #7264d6;
+}
+
+.hero__form {
+    margin-top: 40px;
+    position: relative;
+}
+
+.form-input {
+    color: #696d76;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.hero__form-input {
+    padding: 23px 180px 23px 23px;
+    width: 100%;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+}
+
+.hero__form-btn {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    min-width: 149px;
+    border: none;
+}
+
+.hero__note {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.72;
+}
+
+.hero__media {
+    position: relative;
+    width: 570px;
+}
+
+.hero__phone {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    margin: 0 174px 0 100px;
+    border-radius: 40px;
+    border: 12px solid #212832;
+    background: #fff;
+}
+
+.hero__phone::before {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    content: "";
+    width: 144px;
+    height: 36px;
+    border-radius: 0 0 18px 18px;
+    background: #3c2f60;
+}
+
+.hero__phone-inner {
+    padding: 40px 11px 30px;
+}
+
+/* Card */
+.main-card {
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+    width: 25em;
+    height: 15em;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+    overflow: hidden;
+}
+
+.card__body {
+    position: relative;
+    z-index: 2;
+    padding: 1.6em;
+}
+
+.card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__main-title {
+    margin-bottom: 0.2em;
+    font-size: 1.4em;
+    line-height: 1.35;
+}
+
+.card__two-circle {
+    display: inline-flex;
+}
+
+.card__circle {
+    display: inline-block;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+}
+
+.card__two-circle .card__circle:nth-child(1) {
+    margin-right: -0.8em;
+    background: #ff5900;
+    opacity: 0.7;
+}
+
+.card__two-circle .card__circle:nth-of-type(2) {
+    background: #ffe500;
+    opacity: 0.8;
+}
+
+.card__amount {
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.36;
+}
+
+.card__info {
+    margin-top: 3.2em;
+    display: flex;
+    align-items: center;
+    column-gap: 1.2em;
+}
+
+.card__title {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.card__date,
+.card__username {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.card__decor-1 {
+    width: 10.5em;
+    height: 9.3em;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.card__decor-2 {
+    width: 12.6em;
+    height: 10.5em;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Transations */
+.hero__transations {
+    margin-top: 24px;
+}
+
+.hero__transations-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__transations-heading {
+    color: #31456a;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.375;
+}
+
+.hero__transations-icon-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+}
+
+.hero__transations-icon {
+    display: inline-block;
+    width: 14px;
+    height: 2px;
+    border-radius: 99px;
+    background: #31456a;
+}
+
+.hero__transations-icon:nth-child(2) {
+    width: 8px;
+}
+
+.hero__transations-icon:nth-child(3) {
+    width: 4px;
+}
+
+.transations__list {
+    margin-top: 24px;
+}
+
+.transations-item {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.transations-item__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: -4px -2px 16px 0 #fff, 4px 2px 16px 0 rgba(136, 165, 191, 0.48);
+}
+
+.transations-item:nth-child(1) .transations-item__icon-wrap {
+    background: rgb(74, 181, 227, 0.2);
+}
+
+.transations-item:nth-child(2) .transations-item__icon-wrap {
+    background: rgb(218, 100, 100, 0.2);
+}
+
+.transations-item:nth-child(3) .transations-item__icon-wrap {
+    background: rgb(67, 159, 144, 0.2);
+}
+
+.transations-item:nth-child(4) .transations-item__icon-wrap {
+    background: rgb(114, 100, 214, 0.2);
+}
+
+.transations-item__info {
+    margin-right: auto;
+}
+
+.transations-item__title {
+    margin-bottom: 6px;
+}
+
+.transations-item__value {
+    text-align: right;
+}
+
+.transations-item__amount {
+    margin-bottom: 6px;
+}
+
+.transations-item__title,
+.transations-item__amount {
+    color: #212832;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.transations-item__desc,
+.transations-item__date {
+    color: #696d76;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Decorators */
+.hero__subcard-deposite {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 113px;
+    width: 174px;
+    height: 46px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+}
+
+.deposite__body {
+    display: flex;
+    align-items: center;
+    padding: 16px 10px;
+}
+
+.deposite__title {
+    margin-left: 8px;
+    margin-right: auto;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.deposite__amount {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.hero__subcard-interest {
+    z-index: 2;
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+    text-align: center;
+}
+
+.interest__percentage {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.interest__title {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.hero__subcard-fund {
+    z-index: 2;
+    position: absolute;
+    right: 100px;
+    bottom: 61px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.fund__body {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.fund__info {
+    margin-left: 10px;
+}
+
+.fund__amount {
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.fund__title {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 0.8rem;
+    line-height: 1;
 }
