@@ -325,6 +325,7 @@ a {
     margin-bottom: 0.5em;
     font-size: 1em;
     line-height: 1.4;
+    font-weight: 300;
 }
 
 .card__date,
@@ -709,4 +710,103 @@ a {
     color: #696d76;
     font-size: 1.6rem;
     line-height: 1.75;
+}
+
+.work__content-second {
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+.work__features-list {
+    margin-top: 28px;
+}
+
+.feature-item + .feature-item {
+    margin-top: 18px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.feature-item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #7264d6;
+    border-radius: 50%;
+}
+
+.work__feature-cta {
+    margin-top: 38px;
+    background: #000;
+}
+
+.work__main-card {
+    font-size: 1.9rem;
+}
+
+.work-card__amount {
+    font-size: 1.9em;
+}
+
+.work__transations-item {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    transform: translateY(-60%);
+    margin-top: 0;
+    width: 276px;
+    padding: 23px 13px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.07);
+}
+
+.work__card-income {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+}
+
+.card-income__inner {
+    padding: 15px;
+}
+
+.card-income__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #439f90;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.card-income__title {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.33;
+}
+
+.card-income__amount {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.4;
 }
