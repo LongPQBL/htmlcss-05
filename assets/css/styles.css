@@ -1191,7 +1191,6 @@ a {
 
 /* Footer */
 .footer {
-    margin-bottom: 200px;
     margin-top: 100px;
     padding-top: 100px;
     background: #fafbff;
@@ -1283,4 +1282,34 @@ a {
     display: flex;
     justify-content: center;
     border: none;
+}
+
+.footer__contact {
+    margin: 54px 0 28px 0;
+    display: flex;
+    column-gap: 100px;
+}
+
+.footer__contact-email,
+.footer__footer-contact-call {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1px;
+}
+
+.footer__copyright-body {
+    background: #7264d6;
+    text-align: center;
+}
+
+.footer__copyright {
+    display: inline-block;
+    margin: 28px 0;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
